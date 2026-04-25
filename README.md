@@ -50,5 +50,5 @@ Added flexibility for the user.
 - [ ] *V04- Smart Display:* Progress bar + timer
 - [ ] *V05 - Service Name:* Detect service like HTTP, SSH
 - [ ] *V06 - File Save:* Export results to `.txt` or `.csv`
-
+- [ ] *V07 - Final Boss:* Colors and look
 --
