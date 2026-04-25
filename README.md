@@ -1,7 +1,9 @@
 # ZIA Multithreaded Port Scanner ⚡🛡️
 
->>**"Me Ziaullah..."** 🚀
+>>**"Me Ziaullah..."** 🚀.
+
 >>**"Instructor Dr Muhammad Kazim"
+
 A fast multithreaded TCP port scanner with banner grabbing, built in Python for educational purposes. This project demonstrates the evolution from a basic scanner to a professional tool.
 
 **⚠️ Disclaimer:** This tool is for educational purposes only. Only scan systems you own or have explicit permission to test. Unauthorized scanning is illegal.
