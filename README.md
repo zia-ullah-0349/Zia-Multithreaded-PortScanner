@@ -30,6 +30,28 @@ Added flexibility for the user.
 - **Usage:**
   Start Port: 1
   End Port: 1000
+  ---
+
+**V03 - Speed Control** ✅ 
+Added thread control for the user.
+
+- **File:** `multithreaded_scanner_v03_speed_control.py`
+- **Upgrades:**
+    - **Custom Thread Count:** User can now input thread count [10-200]
+    - **Speed vs Accuracy:** More threads = faster scan but higher CPU load
+- **Usage:** Thread Count: 50  
+
+---
+
+**V04 - Smart Display** ✅ 
+Added real-time feedback.
+
+- **File:** `multithreaded_scanner_v04_smart_display.py`
+- **Upgrades:**
+    - **Live Progress Bar:** Shows `Scanning... X/Y | Time: Zs | Found: N`
+    - **Scan Timer:** Uses `time.time()` to measure total duration
+    - **Bug Note:** Output overlaps due to race condition. Fixed in V05
+- **Usage:** Run and watch the live stats  
 
 ---
 
@@ -39,15 +61,15 @@ Added flexibility for the user.
     ```bash
     git clone https://github.com/zia-ullah-0349/Zia-Multithreaded-PortScanner
 2. *Run a specific version:*
-    multithreaded_scanner_v01.py
+    multithreaded_scanner_v04.py
 3. *Enter Target:* Use `scanme.nmap.org` for legal testing.
 
 ---
 
 📈 Roadmap - Coming Soon
 
-- [ ] *V03 - Speed Control:* User-defined thread count
-- [ ] *V04- Smart Display:* Progress bar + timer
+- ✅ *V03 - Speed Control:* User-defined thread count
+- ✅ *V04- Smart Display:* Progress bar + timer
 - [ ] *V05 - Service Name:* Detect service like HTTP, SSH
 - [ ] *V06 - File Save:* Export results to `.txt` or `.csv`
 - [ ] *V07 - Final Boss:* Colors and look
