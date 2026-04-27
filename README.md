@@ -51,7 +51,31 @@ Added real-time feedback.
     - **Live Progress Bar:** Shows `Scanning... X/Y | Time: Zs | Found: N`
     - **Scan Timer:** Uses `time.time()` to measure total duration
     - **Bug Note:** Output overlaps due to race condition. Fixed in V05
-- **Usage:** Run and watch the live stats  
+- **Usage:** Run and watch the live stats
+
+---
+
+### **V05 - Service Name** ✅ Added service detection.
+
+- **File:** `multithreaded_scanner_v05_service_name.py`
+- **Upgrades:** 
+    - **Auto Service Detection:** Shows SSH, HTTP, FTP using port dictionary
+    - **Smart Fallback:** Shows "Unknown" for ports not in dictionary
+- **Learning:** Used Python dictionaries + `.get()` for safe lookups
+- **Usage:** Run and see service names with open ports
+
+  ---
+
+### **V06 - File Save** ✅ Added report generation.
+
+- **File:** `multithreaded_scanner_v06_file_save.py`
+- **Upgrades:**
+    - **Auto Report Generation:** Saves all results to `scan_<target>_<timestamp>.txt`
+    - **Complete Documentation:** File includes target, port range, threads, start/end time
+    - **Professional Output:** Clean file format ready for sharing or auditing
+    - **Bug Fixes:** Resolved progress bar overwrite issue and `TypeError` crash
+- **Learning:** Used `datetime` module for timestamps + `with open()` context manager for safe file handling
+- **Usage:** Run scan normally. A `.txt` file will auto-generate in the same folder with full results
 
 ---
 
@@ -66,7 +90,7 @@ Added real-time feedback.
 
 ---
 
-📈 Roadmap - Coming Soon
+📈 Roadmap -
 
 - ✅ *V03 - Speed Control:* User-defined thread count
 - ✅ *V04- Smart Display:* Progress bar + timer
